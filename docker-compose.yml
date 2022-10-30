@@ -1,0 +1,11 @@
+version: '3'
+services:
+
+  example_mysql:
+    image: mysql:8
+    container_name: example_mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: changeme
+      MYSQL_DATABASE: property
+    ports:
+      - "3307:3306"
